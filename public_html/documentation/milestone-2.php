@@ -26,8 +26,8 @@
 			allows prospective clients to contact Anthony. It will also include Anthony's
 			professional email and links his professional Doximity profile and social media profiles.</p>
 
-		<img src="mobilewf.jpg" alt="mobile-wire-frame">
+		<img src="mobilewf.jpg">
 
-		<img src="desktopwf.jpg" alt="desktop-wire-frame">
+		<img src="desktopwf.jpg">
 
 	</body>
