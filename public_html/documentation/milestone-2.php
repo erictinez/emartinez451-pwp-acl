@@ -28,7 +28,7 @@
 
 		<img src="desktopwf.jpg" alt="mobile-wire-frame">
 
-		<img src="mobilewf.jpg" alt="mobile-wire-frame">
+		<img src="mobilewf.jpg" width alt="mobile-wire-frame">
 
 	</body>
 
