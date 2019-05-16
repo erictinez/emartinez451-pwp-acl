@@ -33,7 +33,7 @@
 			<div class="container">
 				<nav class="navbar navbar-light bg-secondary">
 					<a class="navbar-brand" href="#">
-						<img src="../images/med.jpg" width="30" height="30" alt="">
+						<img src="images/med.jpg" width="30" height="30" alt="">
 					</a>
 				</nav>
 			</div>
@@ -64,7 +64,7 @@
 					<h5 class="mt-0 mb-1">About Anthony</h5>
 					<p>Dr. Chin Loy graduated from Howard College of Medicine and did his post graduate training at both Howard University and University of California Irvine. He is currently a full time dad to his two daughters. He stays active in Functional Medicine directed at lifestyle and diet change and recently became Human Foundations certified in Functional Patterns. He has achieved the rank of Brown Belt in Brazilian Jiu Jitsu<p>
 				</div>
-				<img class="col-sm-3" src="../images/acl.jpeg" alt="Anthony image">
+				<img class="col-sm-3" src="images/acl.jpeg" alt="Anthony image">
 			</div>
 		</section>
 					</div>
@@ -73,7 +73,7 @@
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="../images/acl.jpeg" alt="Anthony">
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/acl.jpeg" alt="Anthony">
 						<div class="card mb-4">
 							<div class="card-body">
 								<h5 class="card-title">Card title</h5>
@@ -82,7 +82,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="../images/acl.jpeg" alt="Anthony">
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/acl.jpeg" alt="Anthony">
 						<div class="card mb-4">
 							<div class="card-body">
 								<h5 class="card-title">Card title</h5>
@@ -91,7 +91,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="../images/med.jpg" alt="medical">
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/med.jpg" alt="medical">
 						<div class="card mb-4">
 							<div class="card-body">
 								<h5 class="card-title">Card title</h5>
@@ -100,7 +100,7 @@
 						</div>
 					</div>
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="../images/med.jpg" alt="medical">
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/med.jpg" alt="medical">
 						<div class="card mb-4">
 							<div class="card-body">
 								<h5 class="card-title">Card title</h5>
@@ -111,7 +111,64 @@
 				</div>
 			</div>
 
+			<!--
+			Begin Sample Contact Form
+			-->
+			<form id="contactForm" action="php/mailer.php" method="post">
+				<div class="form-group">
+					<label for="name">Name <span class="text-danger">*</span></label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="email">Email <span class="text-danger">*</span></label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="subject">Subject</label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="message">Message <span class="text-danger">*</span></label>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<span class="input-group-text"></span>
+							<i class="fa fa-comment" aria-hidden="true"></i>
+						</div>
+						<textarea class="form-control" rows="5" id="message" name="message" placeholder="I look forward to hearing from you (2000 characters max)"></textarea>
+					</div>
+				</div>
 
+				<!-- reCAPTCHA -->
+				<div class="g-recaptcha" data-sitekey="6LdJyaMUAAAAAIF07s-FHPQmPS4BPB4lcRbyWIv4"></div>
+
+				<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+				<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+			</form>
+
+			<!--empty area for form error/success output-->
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="output-area"></div>
+				</div>
+			</div>
 
 
 
