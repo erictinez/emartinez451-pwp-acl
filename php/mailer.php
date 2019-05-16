@@ -10,12 +10,13 @@
  **/
 // require all composer dependencies
 require_once("vendor/autoload.php");
+
 // require mail-config.php
 require_once("mail-config.php");
 
 use \SendGrid\Mail;
 
-$sendgrid = new \SendGrid($sendGridSecret);
+$sendgrid = new \SendGrid($smtpSecret);
 // verify user's reCAPTCHA input
 $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 $resp = $recaptcha->verify($_POST["g-recaptcha-response"], $_SERVER["REMOTE_ADDR"]);
@@ -29,12 +30,12 @@ try {
 	 * This assumes jQuery (NOT Angular!) will be AJAX submitting the form,
 	 * so we're using the $_POST superglobal.
 	 **/
-	$name = filter_input(INPUT_POST, "i", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$email = filter_input(INPUT_POST, "enjoy", FILTER_SANITIZE_EMAIL);
-	$subject = filter_input(INPUT_POST, "copy", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	$message = filter_input(INPUT_POST, "pasta", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
+	$subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+	$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 	// create SendGrid object
-	$emailObject = new \SendGrid\Mail();
+	$emailObject = new \SendGrid\Mail\Mail();
 	/**
 	 * Attach the sender to the message.
 	 * This takes the form of an associative array where $email is the key for the real name.
