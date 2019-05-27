@@ -1,0 +1,98 @@
+.wrapper {
+	/* The height needs to be set to a fixed value for the effect to work.
+	 * 100vh is the full height of the viewport. */
+	height: 100vh;
+	/* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+	overflow-x: hidden;
+	/* Enable scrolling on the page. */
+	overflow-y: auto;
+	/* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+	perspective: 2px;
+}
+
+.section {
+	/* Needed for children to be absolutely positioned relative to the parent. */
+	position: relative;
+	/* The height of the container. Must be set, but it doesn't really matter what the value is. */
+	height: 100vh;
+
+	/* For text formatting. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-shadow: 0 0 5px #000;
+}
+
+
+#element {
+	z-index: 999999;
+	min-width: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	top: 0;
+	animation-name: stretch;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-delay: 0;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	animation-fill-mode: none;
+	animation-play-state: running;
+	-webkit-animation-name: stretch;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: 0;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode: none;
+	-webkit-animation-play-state: running;
+	background-color: rgba(108,117,125, 0.85);
+}
+
+#center-img {
+	height: auto;
+	width: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 0px 0px 75px 75px ;
+}
+
+#element div {
+text-align: center;
+	margin: 100px;
+	padding: 16px;
+	font-weight: bold;
+}
+
+#closeElement{
+	color: #ffffff;
+	font-size: 32px;
+ }
+
+@keyframes stretch {
+	0% {
+		transform: scale(0);
+		-webkit-transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+}
+
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+
+.btn-transparent {
+	background-color: transparent;
+	font-size: 32px;
+}
+.custom-jumbotron-height {
+	height: 125px;
+	padding: 2rem 1rem;
+}

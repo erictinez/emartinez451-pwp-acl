@@ -6,98 +6,142 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+				integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 		<!-- Font Awesome -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+				integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+		<link rel="stylesheet" href="stylesheet.css"/>
 		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<!-- jQuery first, then Popper.javascript, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+				  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+				  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+				  crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+				  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+				  crossorigin="anonymous"></script>
 
-	   <!-- Adding required dependencies libraries -->
+		<!-- Adding required dependencies libraries -->
 		<!-- jQuery Form, Additional Methods, Validate -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
-
-
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+		<script type="text/javascript"
+				  src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/additional-methods.min.js"></script>
 
 		<!-- Your JavaScript Form Validator -->
-		<script src="js/form-validate.js"></script>
+		<script src="javascript/form-validate.js"></script>
+
+		<!-- Your JavaScript Form Validator and logo animation -->
+		<script src="javascript/jquery.js"></script>
+
+		<!-- Parallax -->
+		<script src="libs/parallax.js-1.5.0/parallax.js"></script>
 
 		<!-- Google reCAPTCHA -->
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 
-
 		<title>Title</title>
 	</head>
 	<body>
-		<h1>Dr. Anthony Chin Loy</h1>
-		<header>
-			<div class="container">
-				<nav class="navbar navbar-light bg-secondary">
-					<a class="navbar-brand" href="#">
-						<img src="images/med.jpg" width="30" height="30" alt="">
-					</a>
-				</nav>
+		<div class="page-header text-center">
+			<h1>Dr. Anthony Chin Loy</h1>
+		</div>
 
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Reviews</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Lifestyle Suggestions</a>
-						</li>
-					</ul>
-					<form class="form-inline my-2 my-lg-0">
-						<input class="form-control mr-sm-4" type="text" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success my-4 my-sm-0" type="submit">Search</button>
-					</form>
-				</div>
+		<header>
+			<div class="container-fullwidth">
+				<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+					<a class="navbar-brand" href="#">MENU</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+							  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto navbar-right">
+							<li class="nav-item">
+								<a class="nav-link" href="#aboutMe">About <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#reviewsLifestyle">Reviews</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#lifestyle">Lifestyle Suggestions</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+
+			<div id="element">
+				<a href="#">
+					<img src="images/med.jpg" id="center-img" alt="">
+				</a>
+				<div>Welcome to my site</div>
+				<button class="btn btn-transparent" id="closeElement">
+					Close X
+				</button>
+
 			</div>
 		</header>
 
- 		<!-- This is the beginning of jumbotron -->
-		<section class="bg-primary py-5">
+		<!-- This is the beginning of jumbotron -->
+		<section id="aboutMe" class="py-5">
 			<div class="media">
 				<div class="media-body">
 					<h5 class="mt-0 mb-1">About Anthony</h5>
 					<div class="row justify-content-center">
 					</div>
-						<div class="container-fluid">
-							<d/>
+					<div class="container-fluid">
 						<img class="col-sm-3" src="images/acl.jpeg" alt="Anthony image">
-					<p>Dr. Chin Loy graduated from Howard College of Medicine and did his post graduate training at both Howard University and University of California Irvine. He is currently a full time dad to his two daughters. He stays active in Functional Medicine directed at lifestyle and diet change and recently became Human Foundations certified in Functional Patterns. He has achieved the rank of Brown Belt in Brazilian Jiu Jitsu<p>
+						<p>Dr. Chin Loy graduated from Howard College of Medicine and did his post graduate training at both
+							Howard University and University of California Irvine. He is currently a full time dad to his two
+							daughters. He stays active in Functional Medicine directed at lifestyle and diet change and
+							recently became Human Foundations certified in Functional Patterns. He has achieved the rank of
+							Brown Belt in Brazilian Jiu Jitsu
+						<p>
+					</div>
 				</div>
-			</div>
 		</section>
 
+		<div class="parallax-window" data-parallax="scroll" data-image-src="images/heartglasses.jpg">
+		</div>
+
 		<!--	Beginning of cards-->
-		<section>
+		<section id="reviewsLifestyle">
 			<div class="container mt-5">
 				<div class="row">
 					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/acl.jpeg" alt="Anthony">
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/acl3.jpeg" alt="Anthony">
 						<div class="card mb-4">
 							<div class="card-body">
 								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+									the card's content.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/acl.jpeg" alt="Anthony">
+					<div id="review" class="col-lg-3 col-sm-6">
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/acl3.jpeg" alt="Anthony">
 						<div class="card mb-4">
 							<div class="card-body">
 								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+									the card's content.</p>
+							</div>
+						</div>
+					</div>
+					<div id="lifestyle" class="col-lg-3 col-sm-6">
+						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/med.jpg" alt="medical">
+						<div class="card mb-4">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+									the card's content.</p>
 							</div>
 						</div>
 					</div>
@@ -106,79 +150,99 @@
 						<div class="card mb-4">
 							<div class="card-body">
 								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-sm-6">
-						<img class="img-fluid rounded-circle d-block mx-auto mb-4" src="images/med.jpg" alt="medical">
-						<div class="card mb-4">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+									the card's content.</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- Begin Contact Form -->
-			<form id="contact-form" method="post" action="../php/mailer.php">
-				<div class="form-group">
-					<label for="name">Name <span class="text-danger">*</span></label>
-					<div class="input-group">
-						<div class="input-group-prepend">
+
+			<div class="modal" id="contactUsModal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<!-- Begin Contact Form -->
+							<form id="contact-form" method="post" action="../php/mailer.php">
+								<div class="form-group">
+									<label for="name">Name <span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
 							<span class="input-group-text">
 							<i class="fa fa-user" aria-hidden="true"></i></span>
-						</div>
-						<input type="text" class="form-control" id="name" name="name" placeholder="Name">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="email">Email <span class="text-danger">*</span></label>
-					<div class="input-group">
-						<div class="input-group-prepend">
+										</div>
+										<input type="text" class="form-control" id="name" name="name" placeholder="Name">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="email">Email <span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
 							<span class="input-group-text">
 							<i class="fa fa-envelope" aria-hidden="true"></i></span>
-						</div>
-						<input type="email" class="form-control" id="email" name="email" placeholder="Email">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="subject">Subject</label>
-					<div class="input-group">
-						<div class="input-group-prepend">
+										</div>
+										<input type="email" class="form-control" id="email" name="email" placeholder="Email">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="subject">Subject</label>
+									<div class="input-group">
+										<div class="input-group-prepend">
 							<span class="input-group-text">
 							<i class="fa fa-pencil-ruler" aria-hidden="true"></i></span>
-						</div>
-						<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
-					</div>
-				</div>
-				<div class="form-group">
-					<label for="message">Message <span class="text-danger">*</span></label>
-					<div class="input-group">
-						<div class="input-group-prepend">
+										</div>
+										<input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="message">Message <span class="text-danger">*</span></label>
+									<div class="input-group">
+										<div class="input-group-prepend">
 							<span class="input-group-text">
 							<i class="fa fa-comment" aria-hidden="true"></i></span>
+										</div>
+										<textarea class="form-control" rows="5" id="message" name="message"
+													 placeholder="I look forward to hearing from you (2000 characters max)"></textarea>
+									</div>
+								</div>
+
+								<!-- reCAPTCHA -->
+								<div class="g-recaptcha" data-sitekey="6LdJyaMUAAAAAIF07s-FHPQmPS4BPB4lcRbyWIv4"></div>
+
+								<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+								<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
+							</form>
+
+							<!--empty area for form error/success output-->
+							<div class="row">
+								<div class="col-xs-12">
+									<div id="output-area"></div>
+								</div>
+							</div>
 						</div>
-						<textarea class="form-control" rows="5" id="message" name="message" placeholder="I look forward to hearing from you (2000 characters max)"></textarea>
 					</div>
-				</div>
-
-				<!-- reCAPTCHA -->
-				<div class="g-recaptcha" data-sitekey="6LdJyaMUAAAAAIF07s-FHPQmPS4BPB4lcRbyWIv4"></div>
-
-				<button class="btn btn-success" type="submit"><i class="fa fa-paper-plane"></i> Send</button>
-				<button class="btn btn-warning" type="reset"><i class="fa fa-ban"></i> Reset</button>
-			</form>
-
-			<!--empty area for form error/success output-->
-			<div class="row">
-				<div class="col-xs-12">
-					<div id="output-area"></div>
 				</div>
 			</div>
 
+			<div class="parallax-window" data-parallax="scroll" data-image-src="images/street.jpg">
+			</div>
+
+
+			<div class="jumbotron text-center custom-jumbotron-height" style="margin-bottom: 0;">
+				<!-- Button trigger modal -->
+				<button class="btn btn-transparent" data-toggle="modal" data-target="#contactUsModal">
+					Contact Me
+				</button>
+				<button id="facebookBtn" class="btn btn-transparent"><i class="fab fa-facebook-f"></i></button>
+				<button id="instagramBtn" class="btn btn-transparent"><i class="fab fa-instagram"></i></button>
+			</div>
 
 	</body>
 </html>

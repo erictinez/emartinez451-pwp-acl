@@ -1,5 +1,21 @@
-$(document).ready(function(){
+$(document).ready(function() {
+	$('#closeElement').click(function() {
+		$("#element").css(
+			{
+				'transform': 'scale(0)',
+				'-webkit-transform': 'scale(0)'
+			}
+		)
+			.fadeOut(1000);
+	});
 
+	$('#facebookBtn').click(function() {
+		window.open('https://facebook.com/ATribeBeyondBlessed', "_blank");
+	});
+
+	$('#instagramBtn').click(function() {
+		window.open('https://instagram.com/ant753?igshid=je3mfwymo0jk', "_blank");
+	});
 	/**
 	 * jQuery Validate Function
 	 *
