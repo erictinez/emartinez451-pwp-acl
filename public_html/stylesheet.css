@@ -92,9 +92,11 @@ text-align: center;
 	background-color: transparent;
 	font-size: 32px;
 }
-.custom-jumbotron-height {
+
+#footer {
 	height: 125px;
 	padding: 2rem 1rem;
+	margin-bottom: 0px;
 }
 
 .flavor {
