@@ -11,3 +11,23 @@ Your milestone 1 passes at a Tier II due to late submission and lack of detail. 
 Great job on Milestone2a. I think it's awesome that you are building the site for another person. Overall there are no errors with the submission. The layout for the wireframes matches and are clearly of the same site. Your content strategy is clear, and I have a good understanding of what content you want for the site. The Content strategy also lines up coherently with the wireframes. 
 The only concern I have is that I am not sure what the point of the reviewed products, or what even the products are.  My initial thought was that you would be highlighting Amazon reviews that Anthoney has made. Im guessing these would be medical products. If this is the case, I think you should spend some time thinking about how you want to highlight these reviews. I recommend breaking out the reviews and suggestions into their sections. Breaking reviews and life suggestions into individual sections allow different layouts for each section instead of smashing both together. This, for example,  allows you too not have a photo with each lifestyle suggestion or will enable you to have reviews that are not longer than a few sentences. 
 #### Grade Tier IV
+
+### Milestone 3
+#### Feedback
+
+Good Job.
+The parralax elements turned out well.
+The ssl certificate is working properly.
+You did a lot of work on this site...but there's still more to do.
+
+The text in the nav-bar is hard to read because the background color is so dark.
+The "close" link on the bang animation image is below the end of the page, making it confusing to the user. 
+There are a few misaligned elements.
+Clicking on the recaptcha link submits the form.
+
+HTML errors
+- Div tag closed before child elements closing tag
+- Form tag not closed
+- Check your errors here: https://validator.w3.org/nu/?doc=https%3A%2F%2Ferictinez.com%2F
+
+Milestone 3 Grade Tier 2  + 1 for ssl certificate = Tier 3
