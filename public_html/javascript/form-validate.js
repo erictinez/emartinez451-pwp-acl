@@ -34,7 +34,7 @@ $(document).ready(function() {
 
 		// setup handling of form errors
 		debug: true,
-		errorClass: "alert alert-danger",
+		errorClass: "",
 		errorLabelContainer: "#output-area",
 		errorElement: "div",
 
